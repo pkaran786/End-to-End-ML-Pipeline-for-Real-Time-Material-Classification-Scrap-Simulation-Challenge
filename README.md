@@ -12,9 +12,9 @@ The goal is to detect and classify waste types (_plastic_, _paper_, _metal_, etc
 - **Classes**: `'cardboard'`, `'glass'`, `'metal'`, `'paper'`, `'plastic'`, `'trash'`
 
 **Why TrashNet?**
-- 🟢 Publicly available
-- ⚖️ Balanced class distribution with labeled images
-- 🏠 Includes common household waste types relevant to real-world sorting systems
+-  Publicly available
+-  Balanced class distribution with labeled images
+-  Includes common household waste types relevant to real-world sorting systems
 
 ---
 
@@ -47,7 +47,7 @@ The goal is to detect and classify waste types (_plastic_, _paper_, _metal_, etc
 
 ---
 
-• Folder Structure :- 
+## 📁 **Folder Structure**
   <pre> 
     End-to-End ML Pipeline for Real-Time Material Classification/
       ├── data/
@@ -73,7 +73,8 @@ The goal is to detect and classify waste types (_plastic_, _paper_, _metal_, etc
 
      </pre>
 
- 
+ ---
+
  🛠️ Instructions to Run
 🔹 Step 1: Setup Environment
 bash
