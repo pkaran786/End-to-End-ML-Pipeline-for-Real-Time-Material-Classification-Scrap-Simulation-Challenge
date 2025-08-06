@@ -63,15 +63,15 @@ Trained model is saved as `best_model.pt` whenever validation accuracy improves.
  • Instructions to run :- 
 
   - Step 1 :- Create a virtual enviornmnet and download the following packages
-    > Run python -m venv venv
-    > Run .\venv\Scripts\activate
-    > Run pip install torch torchvision Pillow scikit-learn to download the packages given below
-    > `torch`, `torchvision`, `scikit-learn`, `Pillow` 
+    Run python -m venv venv
+    Run .\venv\Scripts\activate
+    Run pip install torch torchvision Pillow scikit-learn to download the packages given below
+    `torch`, `torchvision`, `scikit-learn`, `Pillow` 
 
   - Step 2 :- Cleaning & Loading of Dataset
-    > First Relocate to src folder using cd .\src\
-    > Run python data_preparation.py to clean the dataset.
-    > After cleaning & loading the dataset, the next step is to train the model.
+    First Relocate to src folder using cd .\src\
+    Run python data_preparation.py to clean the dataset.
+    After cleaning & loading the dataset, the next step is to train the model.
 
   - Step 3 :- Train the Model
     > To train the model using Resnet18, use the command below.
