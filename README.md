@@ -4,6 +4,7 @@
 This project simulates a **real-time classification system** for scrap materials using a **Convolutional Neural Network (CNN)**.  
 The goal is to detect and classify waste types (_plastic_, _paper_, _metal_, etc.) from images and simulate a **conveyor-belt-like sorting loop**.
 
+
 ---
 
 ## 📊 **Dataset Used & Why**
