@@ -36,28 +36,28 @@ Trained model is saved as `best_model.pt` whenever validation accuracy improves.
   - Simulated real-time deployment using `simulation_loop.py`, processing one image at a time and logging results
 
 • Folder Structure :- 
-    End-to-End ML Pipeline for Real-Time Material Classification/
-    ├── data/
-    │ └── conveyor_simulation/# Simulation images (input frames)
-    | └── cardboard/
-    | └── glass/
-    | └── metal/
-    | └── plastic/
-    | └── paper/
-    | └── trash/
-    | └── conveyor_simulation/
-    ├── models/
-    │ ├── best_model.pt # Trained PyTorch model
-    │ └── model_scripted.pt # TorchScript model for inference
-    ├── results/
-    │ └── predictions.csv # Output from simulation
-    ├── src/
-    │ ├── data_preparation.py # Cleans and loads dataset
-    │ ├── train_model.py # Trains ResNet18 with transfer learning
-    │ ├── inference.py # Predicts class of a single image
-    │ └── simulation_loop.py # Simulates real-time sorting system
-    ├── README.md
-    └── performance_report.pptx # Visuals + performance summary
+    End-to-End ML Pipeline for Real-Time Material Classification/  
+    ├── data/  
+    │ └── conveyor_simulation/# Simulation images (input frames)  
+    | └── cardboard/  
+    | └── glass/  
+    | └── metal/  
+    | └── plastic/  
+    | └── paper/   
+    | └── trash/  
+    | └── conveyor_simulation/  
+    ├── models/  
+    │ ├── best_model.pt # Trained PyTorch model  
+    │ └── model_scripted.pt # TorchScript model for inference  
+    ├── results/  
+    │ └── predictions.csv # Output from simulation  
+    ├── src/  
+    │ ├── data_preparation.py # Cleans and loads dataset  
+    │ ├── train_model.py # Trains ResNet18 with transfer learning  
+    │ ├── inference.py # Predicts class of a single image  
+    │ └── simulation_loop.py # Simulates real-time sorting system  
+    ├── README.md  
+    └── performance_report.pptx # Visuals + performance summary  
 
  
  • Instructions to run :- 
@@ -73,27 +73,27 @@ Trained model is saved as `best_model.pt` whenever validation accuracy improves.
     Run python data_preparation.py to clean the dataset.  
     After cleaning & loading the dataset, the next step is to train the model.  
 
-  - Step 3 :- Train the Model
-    > To train the model using Resnet18, use the command below.
-    > Run python train_model.py
-    > After training the model now it's time to Convert your model to TorchScript and create a lightweight inference script.
+  - Step 3 :- Train the Model  
+    > To train the model using Resnet18, use the command below.  
+    > Run python train_model.py  
+    > After training the model now it's time to Convert your model to TorchScript and create a lightweight inference script.  
 
-  - Step 4 :- Converting Model into TorchScript for Single Image Inference
-    > To execute this following step, use the command below.
-    > Run python inference.py ../data/conveyor_simulation/glass2.jpg for Single Image Inference.
-    > If you want to use other image you can run this command according to file directory - python inference.py ../data/conveyor_simulation/the_image_you_want_to_select.jpg
-    > After this step, now it's time to build a dummy conveyor simulation.
+  - Step 4 :- Converting Model into TorchScript for Single Image Inference  
+    > To execute this following step, use the command below.  
+    > Run python inference.py ../data/conveyor_simulation/glass2.jpg for Single Image Inference.  
+    > If you want to use other image you can run this command according to file directory - python inference.py ../data/conveyor_simulation/the_image_you_want_to_select.jpg  
+    > After this step, now it's time to build a dummy conveyor simulation.  
 
-  - Step 5 :- Dummy conveyor simulation ( mimics frames being captured at intervals from a video or image folder)
-    > For each frame: Classify, Log output to console + store in a result CSV, Print confidence threshold flag if low.
-    > To execute this, Run simulation_loop.py
+  - Step 5 :- Dummy conveyor simulation ( mimics frames being captured at intervals from a video or image folder)  
+    > For each frame: Classify, Log output to console + store in a result CSV, Print confidence threshold flag if low.  
+    > To execute this, Run simulation_loop.py  
 
   - Sample Output :- 
-     cardboard1.jpg →  cardboard (0.9691) 
-     cardboard10.jpg →  cardboard (0.7219) 
-     cardboard2.jpg →  cardboard (0.5978) ⚠️ LOW CONFIDENCE
-     glass1.jpg →  metal (0.4636) ⚠️ LOW CONFIDENCE
-     glass10.jpg →  glass (0.5032) ⚠️ LOW CONFIDENCE
+     cardboard1.jpg →  cardboard (0.9691)   
+     cardboard10.jpg →  cardboard (0.7219)   
+     cardboard2.jpg →  cardboard (0.5978) ⚠️ LOW CONFIDENCE  
+     glass1.jpg →  metal (0.4636) ⚠️ LOW CONFIDENCE  
+     glass10.jpg →  glass (0.5032) ⚠️ LOW CONFIDENCE  
     
   - Results are saved in results/predictions.csv.
   - Images with confidence < 0.6 are flagged.
