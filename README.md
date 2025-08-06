@@ -73,9 +73,9 @@ The goal is to detect and classify waste types (_plastic_, _paper_, _metal_, etc
 
      </pre>
 
- ---
+---
 
- 🛠️ Instructions to Run
+## 🚀 **Deployment Decisions**
 🔹 Step 1: Create a virtual enviornmnet and download the following packages    
     > Run python -m venv venv  
     > Run .\venv\Scripts\activate  
@@ -94,10 +94,10 @@ The goal is to detect and classify waste types (_plastic_, _paper_, _metal_, etc
     > Run python inference.py ../data/conveyor_simulation/glass2.jpg for Single Image Inference.  
     > If you want to use other image you can run this command according to file directory - python inference.py ../data/conveyor_simulation/the_image_you_want_to_select.jpg  
     > After this step, now it's time to build a dummy conveyor simulation.  
-# Example single image inference
+Example single image inference
 python inference.py ../data/conveyor_simulation/glass2.jpg
 
-# Use your own image
+Use your own image
 python inference.py ../data/conveyor_simulation/<image_name>.jpg
 🔹 Step 5: Simulate Conveyor Belt Sorting
     > For each frame: Classify, Log output to console + store in a result CSV, Print confidence threshold flag if low.  
