@@ -36,7 +36,7 @@ Trained model is saved as `best_model.pt` whenever validation accuracy improves.
   - Simulated real-time deployment using `simulation_loop.py`, processing one image at a time and logging results
 
 • Folder Structure :- 
-  <pre> \``` 
+  <pre> 
     End-to-End ML Pipeline for Real-Time Material Classification/
       ├── data/
       │   ├── cardboard/
@@ -59,7 +59,7 @@ Trained model is saved as `best_model.pt` whenever validation accuracy improves.
       ├── README.md
       └── performance_report.pptx    # Performance summary and visuals
 
-    \``` </pre>
+     </pre>
 
  
  • Instructions to run :- 
