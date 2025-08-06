@@ -76,29 +76,35 @@ The goal is to detect and classify waste types (_plastic_, _paper_, _metal_, etc
 ---
 
 ## 🚀 **Deployment Decisions**
+
 🔹 Step 1: Create a virtual enviornmnet and download the following packages    
     > Run python -m venv venv  
     > Run .\venv\Scripts\activate  
     > Run pip install torch torchvision Pillow scikit-learn to download the packages given below  
     `torch`, `torchvision`, `scikit-learn`, `Pillow`  
+    
 🔹 Step 2: Cleaning & Loading the Dataset
     > First Relocate to src folder using cd .\src\  
     > Run python data_preparation.py to clean the dataset.  
     > After cleaning & loading the dataset, the next step is to train the model.  
+    
 🔹 Step 3: Train the Model
     > To train the model using Resnet18, use the command below.  
     > Run python train_model.py  
     > After training the model now it's time to Convert your model to TorchScript and create a lightweight inference script.  
+    
 🔹 Step 4: Convert Model to TorchScript & Run Inference
     > To execute this following step, use the command below.  
     > Run python inference.py ../data/conveyor_simulation/glass2.jpg for Single Image Inference.  
     > If you want to use other image you can run this command according to file directory - python inference.py ../data/conveyor_simulation/the_image_you_want_to_select.jpg  
     > After this step, now it's time to build a dummy conveyor simulation.  
+    
 Example single image inference
 python inference.py ../data/conveyor_simulation/glass2.jpg
 
 Use your own image
-python inference.py ../data/conveyor_simulation/<image_name>.jpg
+python inference.py ../data/conveyor_simulation/<image_name>.jpg  
+
 🔹 Step 5: Simulate Conveyor Belt Sorting
     > For each frame: Classify, Log output to console + store in a result CSV, Print confidence threshold flag if low.  
     > To execute this, Run simulation_loop.py  
