@@ -1,4 +1,14 @@
 Image,Prediction,Confidence
+cardboard1.jpg,cardboard,0.9691
+cardboard10.jpg,cardboard,0.7219
+cardboard2.jpg,cardboard,0.5978
+cardboard3.jpg,cardboard,0.8842
+cardboard4.jpg,cardboard,0.3743
+cardboard5.jpg,cardboard,0.8967
+cardboard6.jpg,cardboard,0.6071
+cardboard7.jpg,cardboard,0.8736
+cardboard8.jpg,cardboard,0.6115
+cardboard9.jpg,cardboard,0.6240
 glass1.jpg,metal,0.4636
 glass10.jpg,glass,0.5032
 glass2.jpg,glass,0.4798
