@@ -1,4 +1,4 @@
-<h1>**End-to-End ML Pipeline for Real-Time Material Classification (Scrap Simulation Challenge)** :- </h1>
+<h1>End-to-End ML Pipeline for Real-Time Material Classification (Scrap Simulation Challenge) </h1>
 
 This project simulates a real-time classification system for scrap materials using a Convolutional Neural Network (CNN). The goal is to detect and classify waste types (plastic, paper, metal, etc.) from images and simulate a conveyor-belt-like sorting loop.
 It is built as part of internship assignment.
