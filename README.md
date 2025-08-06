@@ -118,7 +118,9 @@ Logs result to console & saves to CSV
 
 Flags low-confidence predictions (< 0.6)
 
-📍 Sample Output
+---
+## 📍 **Sample Output**
+
 cardboard1.jpg   →  cardboard (0.9691)  
 cardboard10.jpg  →  cardboard (0.7219)  
 cardboard2.jpg   →  cardboard (0.5978) ⚠️ LOW CONFIDENCE  
