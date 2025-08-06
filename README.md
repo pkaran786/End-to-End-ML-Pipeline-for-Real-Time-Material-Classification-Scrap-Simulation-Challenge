@@ -36,28 +36,30 @@ Trained model is saved as `best_model.pt` whenever validation accuracy improves.
   - Simulated real-time deployment using `simulation_loop.py`, processing one image at a time and logging results
 
 • Folder Structure :- 
-    End-to-End ML Pipeline for Real-Time Material Classification/  
-    ├── data/  
-    │ └── conveyor_simulation/# Simulation images (input frames)  
-    | └── cardboard/  
-    | └── glass/  
-    | └── metal/  
-    | └── plastic/  
-    | └── paper/   
-    | └── trash/  
-    | └── conveyor_simulation/  
-    ├── models/  
-    │ ├── best_model.pt # Trained PyTorch model  
-    │ └── model_scripted.pt # TorchScript model for inference  
-    ├── results/  
-    │ └── predictions.csv # Output from simulation  
-    ├── src/  
-    │ ├── data_preparation.py # Cleans and loads dataset  
-    │ ├── train_model.py # Trains ResNet18 with transfer learning  
-    │ ├── inference.py # Predicts class of a single image  
-    │ └── simulation_loop.py # Simulates real-time sorting system  
-    ├── README.md  
-    └── performance_report.pptx # Visuals + performance summary  
+  <pre> \``` 
+    End-to-End ML Pipeline for Real-Time Material Classification/
+      ├── data/
+      │   ├── cardboard/
+      │   ├── glass/
+      │   ├── metal/
+      │   ├── plastic/
+      │   ├── paper/
+      │   ├── trash/
+      │   └── conveyor_simulation/   # Input frames for simulation
+      ├── models/
+      │   ├── best_model.pt          # Trained PyTorch model
+      │   └── model_scripted.pt      # TorchScript model for deployment
+      ├── results/
+      │   └── predictions.csv        # Output logs from simulation
+      ├── src/
+      │   ├── data_preparation.py    # Dataset cleaning & preparation
+      │   ├── train_model.py         # ResNet18 training script
+      │   ├── inference.py           # Single image inference
+      │   └── simulation_loop.py     # Conveyor belt simulation loop
+      ├── README.md
+      └── performance_report.pptx    # Performance summary and visuals
+
+    \``` </pre>
 
  
  • Instructions to run :- 
