@@ -1,39 +1,51 @@
-<h1>End-to-End ML Pipeline for Real-Time Material Classification (Scrap Simulation Challenge) </h1>
+# 🚀 **End-to-End ML Pipeline for Real-Time Material Classification**  
+### _(Scrap Simulation Challenge — Internship Assignment)_
 
-This project simulates a real-time classification system for scrap materials using a Convolutional Neural Network (CNN). The goal is to detect and classify waste types (plastic, paper, metal, etc.) from images and simulate a conveyor-belt-like sorting loop.
-It is built as part of internship assignment.
+This project simulates a **real-time classification system** for scrap materials using a **Convolutional Neural Network (CNN)**.  
+The goal is to detect and classify waste types (_plastic_, _paper_, _metal_, etc.) from images and simulate a **conveyor-belt-like sorting loop**.
 
-• Dataset Used & Why :- 
-  Dataset : [Trashnet](https://github.com/garythung/trashnet)
-  Classes : 'cardboard', 'glass', 'metal', 'paper', ,'plastic', 'trash'
+---
 
-  Why TrashNet?
-  - Publicly available
-  - Balanced class distribution with labeled images.
-  - Includes common household waste types relevant to real-world sorting systems.
-    
-• Architecture & Training Process :- 
-  - Model : Pretrained ResNet18 using transfer learning.
-  - Modified :  the final layer to predict 6 classes.
-  - Input Size : 224 x 224.
-  - Transforms : Resize, Normalize, Augment (Random Flip, Rotate, ColorJitter).
-  - Loss : CrossEntropyLoss.
-  - Epochs : 5
-  - Batch Size : 32
+## 📊 **Dataset Used & Why**
 
- Metrics Used :- 
- - Accuracy
- - Precision
- - Recall
- - Classification Report
-   
-Trained model is saved as `best_model.pt` whenever validation accuracy improves.
+- **Dataset**: [TrashNet](https://github.com/garythung/trashnet)  
+- **Classes**: `'cardboard'`, `'glass'`, `'metal'`, `'paper'`, `'plastic'`, `'trash'`
 
-• Deployment Decisions :- 
-  - Used *TorchScript* for lightweight deployment (`model_scripted.pt`)
-  - Enables fast inference without needing full PyTorch
-  - Single image inference supported via CLI (`inference.py`)
-  - Simulated real-time deployment using `simulation_loop.py`, processing one image at a time and logging results
+**Why TrashNet?**
+- 🟢 Publicly available
+- ⚖️ Balanced class distribution with labeled images
+- 🏠 Includes common household waste types relevant to real-world sorting systems
+
+---
+
+## 🧠 **Architecture & Training Process**
+
+- **Model**: *Pretrained ResNet18* (Transfer Learning)
+- **Modification**: Final layer adapted to predict **6 classes**
+- **Input Size**: `224 x 224`
+- **Transforms**: Resize, Normalize, Augment (*Random Flip*, *Rotate*, *ColorJitter*)
+- **Loss Function**: `CrossEntropyLoss`
+- **Epochs**: `5`
+- **Batch Size**: `32`
+
+**🧪 Metrics Used**:
+- Accuracy  
+- Precision  
+- Recall  
+- Classification Report
+
+📌 The best model is saved as **`best_model.pt`** whenever validation accuracy improves.
+
+---
+
+## 🚀 **Deployment Decisions**
+
+- Converted model to **TorchScript** (`model_scripted.pt`) for lightweight deployment
+- Enables **fast inference** without full PyTorch
+- Supports **single-image CLI inference** using `inference.py`
+- Simulates **real-time classification** using `simulation_loop.py`, processing images one at a time and logging results
+
+---
 
 • Folder Structure :- 
   <pre> 
