@@ -129,6 +129,7 @@ glass10.jpg      →  glass (0.5032) ⚠️ LOW CONFIDENCE
 
 📝 Results saved in: results/predictions.csv  
 ⚠️ Images with confidence < 0.6 are automatically flagged.
+
 ---
 
 ## 📋 Performance Summary
@@ -141,7 +142,6 @@ glass10.jpg      →  glass (0.5032) ⚠️ LOW CONFIDENCE
 ---
 
 
----
 
 ## ✅ Summary
 
