@@ -129,3 +129,26 @@ glass10.jpg      →  glass (0.5032) ⚠️ LOW CONFIDENCE
 
 📝 Results saved in: results/predictions.csv  
 ⚠️ Images with confidence < 0.6 are automatically flagged.
+---
+
+## 📋 Performance Summary
+
+- **Validation Accuracy**: ~68%  
+- **Precision / Recall**: Calculated using `sklearn.classification_report`
+- **Confusion Matrix**: Printed to console during evaluation
+- **Best Model**: Saved to `models/best_model.pt` based on validation performance
+
+---
+
+
+---
+
+## ✅ Summary
+
+This project demonstrates a functional ML pipeline from data preprocessing to deployment, with a real-time simulation component, designed to mimic industrial scrap sorting systems.  
+It was developed and submitted as part of the ML Internship assignment challenge.
+
+---
+
+**Author**: Karan Purohit  
+📧 karanpurohit0204@gmail.com
